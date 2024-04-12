@@ -6,7 +6,7 @@
 
 html,body{
     margin:0;
-    font-size: 62.5%;
+    font-size: .8rem;
     height: 100%;    
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 400;
@@ -19,8 +19,8 @@ html,body{
     background-image: url(jonatan-pie-h8nxGssjQXs-unsplash.jpg);
     background-attachment: fixed;
   
-    height: 100%;
-    width: 100%;
+   
+    
     min-height: 100%;
 
 }
@@ -150,6 +150,7 @@ background-image: linear-gradient(316deg, #390404 0%, #30021e 74%);
 .section{
     padding: 4rem  9rem;
     text-align: center;
+    min-width: 100%;
 }
 
 .section-coloured{
@@ -208,11 +209,12 @@ background-image: linear-gradient(316deg, #410101 0%, #100000 74%);
 }
 
 .contact, .social-media {
-    flex: 1;
+    padding: 20px;
 }
 
 .social-media ul{
     display: flex;
+    flex-wrap: wrap;
 }
 .contact h3, .social-media h3 {
     margin-bottom: 10px;
@@ -239,4 +241,40 @@ background-image: linear-gradient(316deg, #410101 0%, #100000 74%);
 .social-media img {
     width: 30px;
     height: 30px;
+}
+
+
+
+@media(max-width: 775px){
+    .section{
+        padding: 10px;
+       
+    }
+   
+    .md-heading {
+        font-size: 1.8rem;
+       
+    }
+    
+    .lg-heading {
+        font-size: 2rem;
+        
+    }
+    
+}
+@media(max-width: 500px){
+    .social-media h3{
+        font-size: .9rem;
+    }
+    .md-heading {
+        font-size: 1.8rem;
+       
+    }
+   
+   
+    .lg-heading {
+        font-size: 1rem;
+        
+    }
+    
 }
